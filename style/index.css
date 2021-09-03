@@ -44,6 +44,10 @@ q:before, q:after {
     font-family: 'Anton', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 html {
     font-size: 62.5%;
 
@@ -52,7 +56,7 @@ html {
 body {
     line-height: 1.5;
     font-size: 1.5rem;
-    border: 300px solid #93B5C6;
+    border: 200px solid #93B5C6;
     border-bottom: 0px;
     border-top: 0px;
 }
@@ -123,12 +127,16 @@ nav a:hover {
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    background-color: tomato;
+    background-color: #FFE3E3;
     
 }
 
-.info {
+.info h2 {
     font-size: 3rem;
+}
+.info p {
+    margin:2%;
+    font-size: 2rem;
 }
 
 .bottom {
@@ -138,11 +146,63 @@ nav a:hover {
     justify-content: space-around;
 }
 
-.img img {
-    width: 100%;
-}
+
 
 .bottom div {
     width:20%;
-    margin:1%;
+    margin:2% 1%;
+    overflow: hidden;
+    text-align: center;
+}
+.bottom div img {
+    height: auto;
+    width: 100%;
+}
+footer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #C9CCD5;
+}
+footer div {
+    width: 100%;
+}
+footer h3 {
+    width: 100%;
+    margin:3% 0;
+    font-size: 3rem;
+}
+
+.contact {
+    color: white;
+    background-color: #93B5C6;
+    width: 20%;
+    margin: 1% 40% 5% 40%;
+    font-size: 2rem;
+}
+
+.contact:hover {
+    color: #93B5C6;
+    background-color: white;
+    transform: scale(150%, 150%);
+}
+
+.bottom div:hover {
+    transform: scale(120%, 120%);
+    background-color: #93B5C6;
+}
+
+.projects-button {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 15%;
+    background-color: #93B5C6;
+}
+
+.projects-button:hover {
+    transform: scale(120%, 120%);
 }
